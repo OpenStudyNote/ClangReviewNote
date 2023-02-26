@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+typedef long long ll;
+using namespace std;
+int main()
+{
+    int a;
+    string str="123";
+    a=atoi(str.c_str());
+    /* string先转化为const char*,之后转化为int */
+    cout<<a;
+}

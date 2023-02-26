@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+typedef long long ll;
+using namespace std;
+int main()
+{
+    string str;
+    const char* s1;
+    char* s2;
+    /** string 转为 const char*与char*  **/
+    str="1234";
+    s1=str.c_str();
+    s2=(char*)s1;
+    cout<<s1<<' '<<s2<<endl;
+    /** const char*与char* 转为 string **/
+    s1="4321";
+    str=s1;
+    cout<<str;
+}

@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "task g++",
+            "command": "D:\\RedPandaC\\RedPanda-Cpp\\MinGW64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "E:\\Software-development\\Code-CodeProject\\DevCode",
+                "-std=c++17"
+            ],
+            "options": {
+                "cwd": "D:\\RedPandaC\\RedPanda-Cpp\\MinGW64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+     
+    ]
+}
