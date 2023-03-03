@@ -46,13 +46,40 @@ int main()
 */
 
 /*
+		int *p = &age;  
 		&age  变量age的地址
 		p  	  指针p指向的地址
-		 p=^&age  等同
+	    p=^&age  等同
 		&p    指针p自身的地址 
 		*p = age  等同
 		int *p=&age; 定义指针变量 与 *p = age 不一样
 		
+		int age;//定义变量，内存就会分配地址 例如age地址208,p地址64 
+		int *p; //定义指针变量
+		p = &age; //p指针指向a地址
+		age = 5;	//赋值
+
+		printf("变量age的地址：%p\n", &age); //&age
+		printf("指针p指向的地址：%p\n", p);   // p = &a; //p指针指向a地址
+		printf("指针p自身的地址：%p\n", &p); //&p   指针变量p的地址
+		printf("*p的值：%d\n", *p);			//(*p)  //指针变量所指向地址处的内容值
+		printf("age的值：%d\n", age);		//age	//变量a
+		
+		if make *p = 100 --> age=100  //对*p进行赋值，修改变量值
+
+		
+		int a = 10;
+		int *p; //定义指针变量
+		p = &a; //p指针指向a地址
+		// Pointer arithmetic
+		printf("%d\n", p);    // 204
+		printf("%d\n", *p);    // a=*p=10
+		print("%d\n", p+1);   // 208
+		printf("%d\n", *(p+1));    // *(p+1)该地址所指向的内容不确定,系统会随机生成值
+		//要使用*(p+1),必须提前定义
+
+
+
 */ 
 
 
